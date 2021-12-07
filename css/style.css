@@ -41,9 +41,8 @@
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background-color: blue;
-  border-radius: 12px;
-  opacity: 0.7;
+  background-color: #df7a4b;
+  border-radius: 30px;
   width: 70%;
   height: 5%;
 }
@@ -51,7 +50,7 @@
 .main .main__user-panel .main__user-panel-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
           appearance: none;
-  background-color: #fff;
+  background-color: #2a1fbe;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -62,7 +61,7 @@
   width: 100px;
   height: 40px;
   line-height: 40px;
-  background-color: cadetblue;
+  background-color: white;
   font-size: 40px;
   color: black;
 }
@@ -77,19 +76,20 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: yellow;
+  background-color: white;
   width: 60vw;
   height: 100vh;
 }
 
 .main .main__preview-box .main__preview-box-element {
-  background-color: red;
+  background-color: #f09606;
   width: 60%;
   height: 40%;
+  border-radius: 5%;
 }
 
 .main .main__toolbox {
-  background-color: red;
+  background-color: #b93636;
   width: 40vw;
   height: 20vh;
 }

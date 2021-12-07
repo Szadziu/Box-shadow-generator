@@ -2,7 +2,7 @@
 
 const userPanel = document.querySelector(".main__user-panel");
 const toolBox = document.querySelector(".main__tool-box");
-const colorPicker = document.querySelector(".main__tool-box-color-picker");
+const colorPicker = document.querySelector(".main__toolbox-color-picker");
 const boxElement = document.querySelector(".main__preview-box-element");
 
 const sliderOffsetX = document.querySelector(
@@ -38,33 +38,34 @@ let offsetY = 10;
 let spread = 0;
 let blur = 0;
 let opacity = 0;
+let color = "black";
 
 sliderOffsetXOutput.innerHTML = sliderOffsetX.value;
 sliderOffsetX.oninput = function () {
   sliderOffsetXOutput.innerHTML = this.value;
   offsetX = this.value;
-  boxElement.style.boxShadow = `${offsetX}px ${offsetY}px ${blur}px ${spread}px black`;
+  boxElement.style.boxShadow = `${offsetX}px ${offsetY}px ${blur}px ${spread}px ${color}`;
 };
 
 sliderOffsetYOutput.innerHTML = sliderOffsetY.value;
 sliderOffsetY.oninput = function () {
   sliderOffsetYOutput.innerHTML = this.value;
   offsetY = this.value;
-  boxElement.style.boxShadow = `${offsetX}px ${offsetY}px ${blur}px ${spread}px black`;
+  boxElement.style.boxShadow = `${offsetX}px ${offsetY}px ${blur}px ${spread}px ${color}`;
 };
 
 sliderBlurOutput.innerHTML = sliderBlur.value;
 sliderBlur.oninput = function () {
   sliderBlurOutput.innerHTML = this.value;
   blur = this.value;
-  boxElement.style.boxShadow = `${offsetX}px ${offsetY}px ${blur}px ${spread}px black`;
+  boxElement.style.boxShadow = `${offsetX}px ${offsetY}px ${blur}px ${spread}px ${color}`;
 };
 
 sliderSpreadOutput.innerHTML = sliderSpread.value;
 sliderSpread.oninput = function () {
   sliderSpreadOutput.innerHTML = this.value;
   spread = this.value;
-  boxElement.style.boxShadow = `${offsetX}px ${offsetY}px ${blur}px ${spread}px black`;
+  boxElement.style.boxShadow = `${offsetX}px ${offsetY}px ${blur}px ${spread}px ${color}`;
 };
 
 sliderOpacityOutput.innerHTML = sliderOpacity.value;
@@ -74,6 +75,7 @@ sliderOpacity.oninput = function () {
   boxElement.style.opacity = this.value;
 };
 
-colorPicker = function () {
-  boxElement.style.backgroundColor = this.value;
+colorPicker.oninput = function () {
+  color = this.value;
+  boxElement.style.boxShadow = `${offsetX}px ${offsetY}px ${blur}px ${spread}px ${color}`;
 };

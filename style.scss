@@ -22,14 +22,13 @@
 
     & .main__user-panel-slider {
       appearance: none;
-      background-color: blue;
-      border-radius: 12px;
-      opacity: 0.7;
+      background-color: rgb(223, 122, 75);
+      border-radius: 30px;
       width: 70%;
       height: 5%;
       &::-webkit-slider-thumb {
         appearance: none;
-        background-color: #fff;
+        background-color: rgb(42, 31, 190);
         border-radius: 50%;
         width: 50px;
         height: 50px;
@@ -41,7 +40,7 @@
       width: 100px;
       height: 40px;
       line-height: 40px;
-      background-color: cadetblue;
+      background-color: rgb(255, 255, 255);
       font-size: 40px;
       color: black;
     }
@@ -51,19 +50,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: yellow;
+    background-color: rgb(255, 255, 255);
     width: 60vw;
     height: 100vh;
 
     & .main__preview-box-element {
-      background-color: red;
+      background-color: rgb(240, 150, 6);
       width: 60%;
       height: 40%;
+      border-radius: 5%;
     }
   }
 
   & .main__toolbox {
-    background-color: red;
+    background-color: rgb(185, 54, 54);
     width: 40vw;
     height: 20vh;
   }
