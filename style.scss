@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: red;
+  width: 100vw;
+  height: 100vh;
+
+  & .main__user-panel {
+    background-color: green;
+    width: 40vw;
+    height: 80vh;
+  }
+}
