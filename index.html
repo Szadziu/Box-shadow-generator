@@ -4,15 +4,99 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./main.js" defer></script>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script src="./main.js" defer></script>
     <title>Document</title>
   </head>
   <body>
     <div class="main">
-      <div class="main__user-panel"></div>
-      <div class="main__toolbox"></div>
+      <div class="main__user-panel">
+        <input
+          min="0"
+          max="100"
+          value="0"
+          type="range"
+          name="offsetX"
+          id="offsetX"
+          class="main__user-panel-slider main__user-panel-slider-offsetX"
+        />
+        <div
+          class="
+            main__user-panel-slider-output
+            main__user-panel-slider-output-offsetX
+          "
+        ></div>
+        <input
+          min="0"
+          max="100"
+          value="0"
+          type="range"
+          name="offsetY"
+          id="offsetY"
+          class="main__user-panel-slider main__user-panel-slider-offsetY"
+        />
+        <div
+          class="
+            main__user-panel-slider-output
+            main__user-panel-slider-output-offsetY
+          "
+        ></div>
+        <input
+          min="0"
+          max="100"
+          value="0"
+          type="range"
+          name="blur"
+          id="blur"
+          class="main__user-panel-slider main__user-panel-slider-blur"
+        />
+        <div
+          class="
+            main__user-panel-slider-output main__user-panel-slider-output-blur
+          "
+        ></div>
+        <input
+          min="0"
+          max="100"
+          value="0"
+          type="range"
+          name="spread"
+          id="spread"
+          class="main__user-panel-slider main__user-panel-slider-spread"
+        />
+        <div
+          class="
+            main__user-panel-slider-output main__user-panel-slider-output-spread
+          "
+        ></div>
+        <input
+          min="0"
+          max="1"
+          step="0.01"
+          value="1"
+          type="range"
+          name="opacity"
+          id="opacity"
+          class="main__user-panel-slider main__user-panel-slider-opacity"
+        />
+        <div
+          class="
+            main__user-panel-slider-output
+            main__user-panel-slider-output-opacity
+          "
+        ></div>
+      </div>
+      <div class="main__toolbox">
+        <input
+          type="color"
+          value="#FF0000"
+          class="main__toolbox-color-picker"
+        />
+      </div>
+      <div class="main__preview-box">
+        <div class="main__preview-box-element"></div>
+      </div>
     </div>
   </body>
 </html>
